@@ -1,0 +1,10 @@
+/* 🔹 Define estilos para o corpo da página */
+body {
+  background: #f4f4f9;   /* Cor de fundo clara (cinza suave) para dar contraste com o card */
+}
+
+/* 🔹 Define estilos para elementos com a classe "card" */
+.card {
+  background: #fff;                 /* Fundo branco para destacar o conteúdo */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra suave (x=0, y=2px, blur=6px) para criar efeito de elevação */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- 🔹 Define o tipo de documento como HTML5 -->
+  
+
+  <!-- 🔹 Elemento raiz do HTML, definindo o idioma como português do Brasil -->
+  <html lang="pt-br">
+
+  <head>
+    <!-- 🔹 Define a tabela de caracteres usada -->
+    <!-- UTF-8 garante suporte a acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- 🔹 Título exibido na aba do navegador -->
+    <title>Weather App - Flask</title>
+
+    <!-- 🔹 Importa um arquivo CSS externo -->
+    <!-- "static/style.css" será servido pelo Flask (pasta frontend/static/) -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- 🔹 Importa o arquivo JavaScript -->
+    <!-- O atributo "defer" garante que o JS só será executado após o HTML ser carregado -->
+    <script src="static/script.js" defer></script>
+
+    <!-- 🔹 Estilos CSS embutidos (inline) -->
+    <!-- Boa prática seria mover para o style.css, mas mantemos aqui como exemplo didático -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;  /* Define fonte padrão */
+        text-align: center;              /* Centraliza conteúdo */
+        padding: 30px;                   /* Espaçamento interno */
+      }
+      .card {
+        max-width: 420px;                /* Largura máxima do card */
+        margin: 0 auto;                  /* Centraliza horizontalmente */
+        padding: 16px;                   /* Espaçamento interno */
+        border: 1px solid #ddd;          /* Borda cinza clara */
+        border-radius: 12px;             /* Cantos arredondados */
+      }
+      input, button {
+        padding: 10px;                   /* Espaçamento interno */
+        margin: 5px;                     /* Espaçamento externo */
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- 🔹 Título principal da página -->
+    <h1>🌦 Weather App</h1>
+
+    <!-- 🔹 Campo de entrada para o usuário digitar a cidade -->
+    <!-- id="cidade" será usado pelo JS para capturar o valor -->
+    <input type="text" id="cidade" placeholder="Digite a cidade" />
+
+    <!-- 🔹 Botão para buscar o clima -->
+    <!-- id="buscar" será usado no JS para adicionar evento de clique -->
+    <button id="buscar">Buscar</button>
+
+    <!-- 🔹 Área onde os resultados serão exibidos -->
+    <!-- A classe "card" aplica o estilo visual definido no CSS -->
+    <!-- O id="resultado" será manipulado dinamicamente pelo script.js -->
+    <div id="resultado" class="card"></div>
+  </body>
+</html>
